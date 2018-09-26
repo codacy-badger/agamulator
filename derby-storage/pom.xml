@@ -4,20 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.agamulator</groupId>
-    <artifactId>ram-storage</artifactId>
+    <artifactId>derby-storage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <parent>
         <groupId>com.agamulator</groupId>
         <artifactId>agamulator</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
     <dependencies>
         <dependency>
             <groupId>com.agamulator</groupId>
             <artifactId>core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.14.2.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
